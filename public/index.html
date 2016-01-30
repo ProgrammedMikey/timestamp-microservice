@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Timestamp Generator</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/sandstone/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Timestamp microservice</h1>
+        <hr />
+        <input id="param" placeholder="Enter date or unix time" type="text" />
+        <button>Format</button>
+        <span class="text-danger">Example: Febuary 7, 1990 or 634412161</span>
+      </div>
+      <h1 id="result" class="text-center">
+        <code>
+          { unix: <span id="unix"></span>, natural: <span id="natural"></span> }
+        </code>
+      </h1>
+    </div>
+    <a id="about" class="label label-info" href="http://odran037.io" target="_target">?</a>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
